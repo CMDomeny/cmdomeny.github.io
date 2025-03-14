@@ -21,7 +21,7 @@ h1 {
 }
 
 .links {
-    display: inline-block; /* make the link behave like a button */
+    display: block; /* make the link behave like a button */
     background-color: #007bff; /* button colour */
     color: white; /* text colour */
     padding: 10px 20px; /* add space around the text */
