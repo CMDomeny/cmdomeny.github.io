@@ -1,33 +1,58 @@
 /* Basic Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 20px;
+    font-family: Arial, sans-serif; /* set the font for the page */
+    background-color: #f7f7f7; /* background colour */
+    margin: 0; /* remove default margin */
+    padding: 20px; /* add space around the page */
 }
 
 .container {
     text-align: center;
 }
 
+/* Heading Styles */
 h1 {
-    color: #333;
+    color: #333; /* set the heading colour*/
 }
 
+/* Link Styles */
 .links {
     margin-top: 20px;
 }
 
 .links {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px 0;
-    text-decoration: none;
-    border-radius: 5px;
+    display: inline-block; /* make the link behave like a button */
+    background-color: #007bff; /* button colour */
+    color: white; /* text colour */
+    padding: 10px 20px; /* add space around the text */
+    margin: 10px 0; /* add space between links */
+    text-decoration: none; /* remove the underline from the link */
+    border-radius: 5px; /* rounded corners for the button */
 }
 
+/* Hover Effect */
 .link:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* change the background colour when hovered */
+}
+
+.link:focus {
+    outline: 2px solid #0056b3;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) and (orientation: portrait) {
+    body {
+        padding: 10px; /* reduce padding for mobile */
+    }
+
+    .container {
+        padding: 10px; /* make sure content doesn't touch edges */
+    }
+
+    .link {
+        width: 100%; /* make links fill the entire screen width */
+        margin: 10px 0; /* ensure there's space between links */
+        padding: 15px; /* make buttons larger for small screens */
+        font-size: 18px; /* increase font size for readability */
+    }
 }
